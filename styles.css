@@ -10,9 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(/imgs/bg.jpeg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;    
-    
 }
 .container {
 	width: 90%;
@@ -56,18 +56,21 @@ body {
 }
 .main-content .writer {
     text-transform: uppercase;
+    font-family: 'Oswald';
 	letter-spacing: 5px;
-	color: red;
-    text-shadow: 0 2px 2px #fff;
+	color: #000;
+    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;;
 	text-align: center;
-	margin-top: 20px;
-	font-size: 25px;
+	margin-top: 30vh;
+    margin-left: 50vw;
+	font-size: 2vw;
 	
 }
 .main-content .button-area {
 	display: grid;
-	place-items: center;
-	margin-top: 20px;
+	place-items: left;
+	margin-top: -5vh;
+    margin-left: 5vw;
 	padding: 10px 0;
 }
 .button-area .btn button {
