@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imgs/bcg4.jpeg);
+    background-size: 100%;
+    height: 100vh;    
+}
+.container {
+	width: 550px;
+	height: 450px;
+}
+.header h2 {
+    font-weight: 400;
+    color: #fff;
+}
+.main-content {
+	width: 100%;
+	height: 300px;
+	padding: 50px 40px;
+	background-color: rgba(255,255,255,0.5) ;
+	border-radius: 15px;
+	box-shadow: 0 25px 31px 0 rgba(0,0,0,0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-content:hover {
+    transform: translateY(-10px);
+}
+
+.text-area {
+	text-align: center;
+	font-size: 25px;
+	color: #262626;
+	line-height: 1.5;
+    
+}
+.text-area .icon {
+    margin-right: 5px;
+}
+.main-content .writer {
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	color: red;
+    text-shadow: 0 2px 2px #fff;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
+	
+}
+.main-content .button-area {
+	display: grid;
+	place-items: center;
+	margin-top: 20px;
+	padding: 10px 0;
+}
+.button-area .btn button {
+    background-color: rgb(38, 38, 38);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 15px; 
+    
+}
+.button-area button:active {
+    background-color: rgba(38, 38, 38, 0.5);
+
+}
