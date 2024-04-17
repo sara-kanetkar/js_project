@@ -1,4 +1,4 @@
-// Array of quotes
+
 const quotes = [
     "The only way to do great work is to love what you do. - Steve Jobs",
     "Start where you are. Use what you have. Do what you can. - Arthur Ashe",
@@ -13,11 +13,8 @@ const quotes = [
     "Life is what happens when you're busy making other plans. - John Lennon"
 ];
 
-// Function to generate a random quote
 function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    // const quoteElement = document.getElementById("quote");
-    // const writerElement = document.getElementById("writer");
     let quoteElement = document.querySelector(".quote");
     let writerElement = document.querySelector(".writer");
     quote = seperate(quotes[randomIndex]);
@@ -26,11 +23,7 @@ function generateQuote() {
     writerElement.innerHTML = quote[1];
 }
 
-// // Event listener for the button
-// document.getElementById("generateBtn").addEventListener("click", generateQuote);
 
-// // Initial quote generation
-// generateQuote();
 
 function seperate(quote) {
 
