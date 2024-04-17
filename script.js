@@ -9,7 +9,8 @@ const quotes = [
     "Everything you've ever wanted is on the other side of fear. - George Addair",
     "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
     "It always seems impossible until it's done. - Nelson Mandela",
-    "You are never too old to set another goal or to dream a new dream. - C.S. Lewis"
+    "You are never too old to set another goal or to dream a new dream. - C.S. Lewis",
+    "Life is what happens when you're busy making other plans. - John Lennon"
 ];
 
 // Function to generate a random quote

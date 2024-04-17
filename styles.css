@@ -40,11 +40,13 @@ body {
 	text-align: center;
     font-family: 'Oswald';
     font-weight: 700;
-	font-size: 6vw;
+	font-size: 5vw; 
 	color: #262626;
 	line-height: 1.5;
     transition: transform 0.3s ease-out;
     transform: scale(1,1.3);
+    height: 40%;
+    width: 100%;
     
 }
 .text-area:hover {
@@ -68,10 +70,14 @@ body {
 }
 .main-content .button-area {
 	display: grid;
+    size: contain;
 	place-items: left;
 	margin-top: -5vh;
     margin-left: 5vw;
 	padding: 10px 0;
+    position: absolute;
+    bottom: 20;
+
 }
 .button-area .btn button {
     background-color: rgb(38, 38, 38);
