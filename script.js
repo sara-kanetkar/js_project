@@ -18,7 +18,6 @@ function generateQuote() {
     let quoteElement = document.querySelector(".quote");
     let writerElement = document.querySelector(".writer");
     quote = seperate(quotes[randomIndex]);
-    console.log(quote[1]+"dnf");
     quoteElement.innerHTML = quote[0];
     writerElement.innerHTML = quote[1];
 }
@@ -36,4 +35,20 @@ function seperate(quote) {
 
 }
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
 
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+        else {
+            entry.target.classList.remove('show');
+        }
+
+
+    });
+
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
